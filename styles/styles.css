@@ -1,0 +1,176 @@
+/* Variable Declaration */
+:root {
+    --left-nav-max-width: 200px;
+    --article-font-size: 1.5em;
+    --article-font-color: rgba(233, 233, 227, 0.785);
+    --fs-page-width: 1800px;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Set HTML to Browser Height */
+html {
+    height: 100%;
+}
+
+/* Link Styles */
+a:link {
+    color:rgb(70, 70, 208) ;
+}
+
+a:visited {
+    color: blueviolet;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+
+h1 {
+    font-size: 4em;
+    margin: 0;
+}
+
+h2 {
+    font-size: 3em;
+}
+
+.article-text {
+    font-size: var(--article-font-size);
+}
+
+
+.header {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    border-bottom: 2px solid rgb(118, 118, 118);
+    background-color: rgb(35, 34, 46);
+    position: sticky;
+    top: 0;
+}
+
+.header .top-nav-container {
+    display: flex;
+    width: var(--fs-page-width);
+    height: 3em;
+    top: 0;
+    position: sticky;
+    align-items: center;
+    font-size: 2em;
+    margin: 0 auto;
+    padding: 0 1em;
+}
+
+.logo {
+    flex: 0;
+}
+
+.top-nav {
+    display: flex;
+    margin-right: auto;
+    flex-shrink: 0;
+}
+
+.top-nav ul {
+    list-style-type: none;
+    gap: 1em;
+}
+
+.search-box {
+    margin: 1em;
+}
+
+.search-box input {
+    height: 2em;
+    width: 20em;
+}
+
+body {
+    font-family: 'Trebuchet MS', sans-serif;
+    background-color: rgb(36, 35, 47);
+    color: var(--article-font-color);
+    min-height: 100%;
+    margin: 0 auto;
+}
+
+.container {
+    max-width: var(--fs-page-width);
+    display: flex;
+    margin: 0 auto;
+}
+
+.content {
+    width: auto;
+    max-width: 800px;
+    padding-left: 2em;
+    border-left: 1px solid rgb(118, 118, 118);
+    min-height: 100%;
+}
+
+
+/* Nav Styles */
+.left-nav {
+    overflow-y: hidden;
+    align-self: start;
+    position: sticky;
+    margin: 0;
+    top: 4em;
+    font-size: 1.5em;
+    min-width: 0;
+    padding: 0 1em;
+    flex-shrink: 0;
+}
+
+.left-nav ul {
+    list-style-type: none;
+    margin-block: 0;
+    margin-inline: 0;
+    padding-inline-start: 0;
+    min-width: 0;
+}
+
+.left-nav ul li {
+    border-radius: 5px;
+    margin: 10px auto;
+    list-style-type: none;
+    max-height: 1.5em;
+    min-width: 0;
+}
+
+.left-nav ul li:hover {
+    background-color: rgb(52, 51, 68);
+}
+
+.left-nav ul a {
+    color: var(--article-font-color);
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+}
+
+
+/* Ingredient List Styles */
+.ingredient-list {
+    background-color: rgb(24, 24, 32);
+    max-width: 600px;
+    padding-inline-start: 0;
+}
+
+.ingredient-list li {
+    padding: 20px 5px;
+    list-style-type: none;
+}
+
+/* Alternating Colors on Ingredients */
+.ingredient-list li:nth-child(even) {
+    background-color: rgb(from rgb(166, 166, 216) 166 166 216 / 0.1);
+}
+.ingredient-list li:nth-child(odd) {
+    color: rgb(166, 166, 216);
+}
