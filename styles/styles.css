@@ -17,11 +17,11 @@ html {
 
 /* Link Styles */
 a:link {
-    color:rgb(70, 70, 208) ;
+    color:#8383ff;
 }
 
 a:visited {
-    color: blueviolet;
+    color: #b66bfb;
 }
 
 a:hover {
