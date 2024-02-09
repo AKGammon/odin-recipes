@@ -122,7 +122,6 @@ body {
     top: 4em;
     font-size: 1.5em;
     min-width: 0;
-    padding: 0 1em;
     flex-shrink: 0;
 }
 
@@ -135,11 +134,9 @@ body {
 }
 
 .left-nav ul li {
+    padding: 10px 1em;
     border-radius: 5px;
-    margin: 10px auto;
     list-style-type: none;
-    max-height: 1.5em;
-    min-width: 0;
 }
 
 .left-nav ul li:hover {
